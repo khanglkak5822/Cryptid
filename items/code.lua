@@ -2024,13 +2024,6 @@ local rigged = {
 		) -- this doesn't really do much tbh, but the slight effect is nice
 		card.hover_tilt = card.hover_tilt * 2
 	end,
-	calculate = function(self, card, context)
-		if context.mod_probability and context.trigger_obj == card then
-			return {
-				numerator = context.numerator * 2,
-			}
-		end
-	end,
 }
 -- ://Patch
 -- Removes all visible debuffs, flips cards face up
